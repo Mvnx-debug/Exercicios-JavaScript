@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Senha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #mensagem {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .valido {
+            color: green;
+        }
+        .invalido {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Validador de Senha</h2>
+        <p>A senha deve conter:</p>
+        <ul>
+            <li>Mínimo 8 caracteres</li>
+            <li>Pelo menos 1 número</li>
+        </ul>
+        
+        <input type="password" id="senha" placeholder="Digite sua senha">
+        <button id="validar">Validar Senha</button>
+        <p id="mensagem"></p>
+    </div>
+<script src="validador.js"></script>
+</body>
+</html>

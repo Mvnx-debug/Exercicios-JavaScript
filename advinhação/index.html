@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do advinha</title>
+    <style>
+
+        #numero, .content{
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            gap: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="display: flex; justify-content: center; color: blue;">Jogo do advinha</h1>
+
+    <div class="content">
+        <p>irei advinhar seu numero, digite um numero de 0 a 10</p>
+        <input type="number" id="numero" min="1" max="10">
+        <button id="enviar">Enviar Palpite</button>
+        <p id="mensagem"></p>
+    </div>
+
+
+
+<script src="jogo.js"></script>
+</body>
+</html>
